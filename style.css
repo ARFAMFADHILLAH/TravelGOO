@@ -144,9 +144,23 @@
         display: none;
     }
     
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(241, 241, 241);
+        color: rgb(22, 22, 22);
+        font-family: 'Times New Roman', Times, serif;
+        text-shadow: blue;
+    }
+    
     @media (max-width: 868px) {
         body {
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(45, 171, 255);
         }
         nav {
             flex-wrap: wrap;
