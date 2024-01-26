@@ -152,8 +152,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(241, 241, 241);
-        color: rgb(22, 22, 22);
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px black;
         font-family: 'Times New Roman', Times, serif;
         text-shadow: blue;
     }
