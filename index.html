@@ -60,22 +60,42 @@
                 <div class="button">
                     Book
                 </div>
-            </section>
-        </main>
-        <footer>@2024 created by Arfa</footer>
-        <script>
-            const Hamburger = document.getElementById('hamburger')
-            const Nav = document.getElementById('menu')
-            const Close = document.getElementById('close')
+                <div class="card-group">
+                    <div class="card shadow">
+                        <p class="title-card">Top Choices</p>
+                        <hr>
+                        <p class="text-card">Total 800+ destinations you can work with.</p>
+                    </div>
+                    <div class="card-2 shadow-2">
+                        <p class="title-card-2">Quality Guidance</p>
+                        <hr>
+                        <p class="text-card-2">Our tour guide has 20+ years of experience.</p>
+                    </div>
+                    <div class="card-3 shadow-3">
+                        <p class="title-card">Easy Booking</p>
+                        <hr>
+                        <p class="text-card-3">
+                            best is class ticket booking system.
+                        </p>
+                    </div>
+                </div>
+    </div>
+    </section>
+    </main>
+    <!-- <footer>@2024 created by Arfa</footer> -->
+    <script>
+        const Hamburger = document.getElementById('hamburger')
+        const Nav = document.getElementById('menu')
+        const Close = document.getElementById('close')
 
-            Hamburger.addEventListener('click', () => {
-                Nav.classList.toggle('hidden')
-            })
+        Hamburger.addEventListener('click', () => {
+            Nav.classList.toggle('hidden')
+        })
 
-            Close.addEventListener('click', () => {
-                Nav.classList.toggle('hidden')
-            })
-        </script>
+        Close.addEventListener('click', () => {
+            Nav.classList.toggle('hidden')
+        })
+    </script>
 </body>
 
 </html>
