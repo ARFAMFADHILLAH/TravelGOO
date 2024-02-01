@@ -25,6 +25,7 @@
     }
     
     nav ul {
+        margin-bottom: 150px;
         display: flex;
         align-items: center;
         gap: 3rem;
