@@ -92,21 +92,27 @@ textarea:focus {
     outline: 1px solid #008ee0;
 }
 
+.btn {
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+}
+
 button {
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
     background-color: #008ee0;
     border: 1px solid #008ee0;
     color: #ffff;
     font-size: 12px;
+    text-decoration: none;
     font-weight: bold;
-    padding: 12px 45px;
+    padding: 10px 15px;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: transform 80ms ease-out;
+}
+
+button p {
+    text-decoration: none;
 }
 
 button:hover {

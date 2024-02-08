@@ -4,35 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product</title>
+    <title>TravelGO!</title>
     <link rel="shortcut icon" href="favicon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="product.css"> </head>
 
 <body>
+
     <div class="container">
         <h2>Daftar Destinasi Perjalanan</h2>
 
         <table class="data-table">
-            <tr>
-                <th>No</th>
-                <th>Destinasi</th>
-
-                <th>Harga tiket</th>
-                <th>lama perjalanan</th>
-            </tr>
+            <tbody>
+                <tr>
+                    <th>No</th>
+                    <th>Destinasi</th>
+                    <th>Harga tiket</th>
+                    <th>Lama perjalanan</th>
+                    <th>Aksi</th>
+                </tr>
+            </tbody>
             <tr>
                 <td data-th="No">1</td>
                 <td data-th="Destinasi">Kelingking Beach</td>
 
                 <td data-th="Harga tiket">Rp 150.000</td>
                 <td data-th="lama perjalanan">1 jam</td>
+                <td><span class="action_btn">
+                        <a href="#" onclick="showBookingAlert()">booking</a>
+                        <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+                </span></td>
+
             </tr>
             <tr>
                 <td data-th="No">2</td>
                 <td data-th="Destinasi">Pantai Seminyak</td>
 
                 <td data-th="Harga tiket"> Rp 200.000</td>
-                <td data-th="lama perjalanan">2 jam</td>
+                <td data-th="lama perjalanan">3 jam</td>
+                <td><span class="action_btn">
+                        <a href="#" onclick="showBookingAlert() ">booking</a>
+                        <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+                </span></td>
             </tr>
             <tr>
                 <td data-th="No">3</td>
@@ -40,24 +52,69 @@
 
                 <td data-th="Harga tiket">Rp 500.000</td>
                 <td data-th="lama perjalanan">2 jam</td>
+                <td><span class="action_btn">
+                        <a href="#" onclick="showBookingAlert()">booking</a>
+                        <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+                </span></td>
             </tr>
             <tr>
                 <td data-th="No">4</td>
                 <td data-th="Destinasi">Pantai Geger Nusa Dua</td>
 
                 <td data-th="Harga tiket">Rp 750.000</td>
-                <td data-th="lama perjalanan">2 jam</td>
+                <td data-th="lama perjalanan">5 jam</td>
+                <td><span class="action_btn">
+                        <a href="#" onclick="showBookingAlert()">booking</a>
+                        <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+                </span></td>
             </tr>
             <tr>
                 <td data-th="No">5</td>
                 <td data-th="Destinasi">Pantai Suluban</td>
-
                 <td data-th="Harga tiket">Rp 650.000</td>
-                <td data-th="lama perjalanan">2 jam</td>
+                <td data-th="lama perjalanan">7 jam</td>
+                <td><span class="action_btn">
+                        <a href="#" onclick="showBookingAlert()">booking</a>
+                        <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+                </span></td>
+            </tr>
+            <tr>
+                <td data-th="No">5</td>
+                <td data-th="Destinasi">Pantai sari</td>
+                <td data-th="Harga tiket">Rp 750.000</td>
+                <td data-th="lama perjalanan">5 jam</td>
+                <td><span class="action_btn">
+                    <a href="#" onclick="showBookingAlert()">booking</a>
+                    <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+            </span></td>
+            </tr>
+            <tr>
+                <td data-th="No">5</td>
+                <td data-th="Destinasi">Pantai Serasi</td>
+                <td data-th="Harga tiket">Rp 650.000</td>
+                <td data-th="lama perjalanan">7 jam</td>
+                <td><span class="action_btn">
+                    <a href="#" onclick="showBookingAlert()">booking</a>
+                    <a href="#" onclick="showbatalkanAlert()">batalkan</a>
+            </span></td>
             </tr>
         </table>
+        <div class="button">
+            <a href="index.html" class="btn btn1">Kembali</a>
+        </div>
 
-    </div>
+
+        <script>
+            function showBookingAlert() {
+                alert("Booking anda sedang dalam Proses!");
+            }
+
+            function showbatalkanAlert() {
+                alert("Yakin ingin membatalkan?");
+            }
+        </script>
+
+        </script>
 </body>
 
 </html>

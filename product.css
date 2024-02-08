@@ -5,7 +5,8 @@
 body {
     width: 100%;
     min-height: 100%;
-    background-color: #eee;
+    background-image: url(/img/full-shot-travel-concept-with-landmarks\(1\).jpg);
+    position: absolute;
 }
 
 .container {
@@ -17,7 +18,8 @@ body {
     font-family: Montserrat, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    color: #444;
+    color: yellow;
+    text-shadow: 0 5px 0 10px #444;
 }
 
 h1 {
@@ -53,10 +55,12 @@ h1 {
 
 .data-table th {
     display: none;
+    text-align: center;
 }
 
 .data-table td {
     display: block;
+    text-align: center;
 }
 
 .data-table td:first-child {
@@ -79,22 +83,90 @@ h1 {
     color: yellow;
 }
 
-@media (min-width: 600px) {
+.action_btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action_btn>a {
+    text-decoration: none;
+    /*color: #444;
+    */
+    /*background: whitesmoke;
+    */
+    border: 1px solid darksalmon;
+    display: inline-block;
+    padding: 7px 17px;
+    font-weight: bold;
+    border-radius: 13px;
+    transition: 0.3s ease-in-out;
+}
+
+.action_btn>a:nth-child(1) {
+    background: rgb(31, 78, 198);
+    color: rgb(255, 255, 255);
+}
+
+.action_btn>a:nth-child(2) {
+    background: rgb(214, 9, 9);
+    color: white;
+}
+
+.action_btn>a:hover {
+    box-shadow: 0 5px 8px #0003;
+}
+
+
+/* .data-table>tbody>tr {
+    background-color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+.data-table>tbody>tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+.data-table>tbody>tr:hover {
+    filter: drop-shadow(0 2px 6px #0002);
+} */
+
+.btn {
+    border: 1px solid rgb(170, 169, 169);
+    border-radius: 5px;
+    color: rgb(211, 211, 211);
+    text-decoration: none;
+    padding: 5px 15px;
+}
+
+.btn1 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: red;
+}
+
+@media (min-width: 580px) {
     .data-table td::before {
         display: none;
     }
     .data-table th,
     .data-table td {
         display: table-cell;
-        padding: .25em .5em;
-        padding: 1em !important;
+        padding: .5em;
+        /* Mengatur padding yang lebih konsisten */
     }
     .data-table th:first-child,
-    .data-table td:last-child {
-        padding-left: 0;
+    .data-table td:first-child {
+        padding-left: 1em;
+        /* Menyesuaikan padding kiri untuk sel pertama */
     }
     .data-table th:last-child,
     .data-table td:last-child {
-        padding-right: 0;
+        padding-right: 1em;
+        /* Menyesuaikan padding kanan untuk sel terakhir */
     }
 }
